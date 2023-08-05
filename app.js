@@ -22,10 +22,19 @@ function appStart() {
     attempts++;
     index = 0;
   };
+
+  const displayGameover = () => {
+    const div = document.createElement("div");
+    div.innerText = "게임이 종료되었습니다!";
+    div.classList.add("game-over");
+    document.body.appendChild(div);
+  };
   const gameover = () => {
     window.removeEventListener("keydown", handdleKeydown);
     window.removeEventListener("click", handdleClick);
+
     clearInterval(timer);
+    displayGameover();
   };
 
   const handdleEnterKey = async () => {

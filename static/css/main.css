@@ -64,34 +64,3 @@ main {
   margin: 10px;
   color: rgb(37, 88, 150);
 }
-
-@keyframes icons-up {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.key-board:hover {
-  cursor: pointer;
-  animation: 0.5s icons-up ease-in-out;
-  background-color: rgb(120, 179, 250);
-}
-
-.game-over {
-  display: flex;
-  position: absolute;
-  top: 300px;
-  left: 40%;
-  justify-content: center;
-  align-items: center;
-  width: 20vw;
-  height: 100px;
-  background-color: aqua;
-  border-radius: 55px;
-}
