@@ -137,10 +137,19 @@ function appStart() {
     timer = setInterval(setTime, 1000);
   };
 
+  const mobileRegex = [
+    /Android/i,
+    /iPhone/i,
+    /iPad/i,
+    /iPod/i,
+    /BlackBerry/i,
+    /Windows Phone/i,
+  ];
+
   startTimer();
   window.addEventListener("keydown", handdleKeydown);
   window.addEventListener("click", handdleClick);
-  window.addEventListener("touchstart", handdleClick);
+  mobileRegex.addEventListener("touchstart", handdleClick, false);
 }
 
 appStart();
