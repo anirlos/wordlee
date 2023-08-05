@@ -140,6 +140,7 @@ function appStart() {
   startTimer();
   window.addEventListener("keydown", handdleKeydown);
   window.addEventListener("click", handdleClick);
+  window.addEventListener("touchstart", handdleClick);
 }
 
 appStart();
