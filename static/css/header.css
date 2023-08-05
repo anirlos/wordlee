@@ -1,0 +1,28 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(211, 214, 218);
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#wordle {
+  color: rgb(244, 145, 134);
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.menu-bar {
+  width: 40px;
+}
+
+.head-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-icons img {
+  width: 40px;
+}
