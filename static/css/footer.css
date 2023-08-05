@@ -38,3 +38,15 @@ footer {
 .key-board img {
   width: 30px;
 }
+
+.green {
+  background-color: rgb(132, 240, 135);
+}
+
+.yellow {
+  background-color: rgb(249, 229, 101);
+}
+
+.gray {
+  background-color: rgb(166, 165, 165);
+}
