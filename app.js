@@ -14,7 +14,7 @@ setInterval(setTime, 1000);
 
 let index = 0;
 let attempts = 0;
-const 정답 = "APPLE";
+const 정답 = "CHOCO";
 
 function appStart() {
   const nextLine = () => {
@@ -37,7 +37,7 @@ function appStart() {
     displayGameover();
   };
 
-  const handdleEnterKey = async () => {
+  const handdleEnterKey = () => {
     let 맞은_갯수 = 0;
 
     //서버에서 정답 받아오는 코드
